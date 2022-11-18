@@ -1,32 +1,73 @@
-# Web-Design-Challane
+Website Requirements
+The overall requirements for your website are as follows:
 
-Use HTML, CSS and BOOTSTRAP to create a web page that displays visualizations and the data that is used to create the visualizations.
+NOTE
+For reference, review the following Screenshots section.
 
-## Web Visualization Dashboard
+Your website must consist of seven pages.
 
-Create a visualization dashboard website using climate visualization plots.
+At the top of every page, your website must have a navigation bar.
 
-Create individual pages for each plot and navigate between them. These pages contain the visualizations and their corresponding explanations.
+Your website must be deployed to GitHub Pages.
 
-Landing page that has a comparison of all of the plots, and another page where the data displays as an html table.
+Next, we’ll describe these requirements in detail.
 
-### Website Details:
+Your website must consist of seven pages as follows:
 
-* A [landing page] containing:
-  * An explanation of the project.
-  * Links to each visualizations page.
+A landing page that contains the following elements:
 
-* Four [visualization pages] each with:
-  * A descriptive title and heading tag.
-  * The plot/visualization itself for the selected comparison.
-  * A paragraph describing the plot and its significance.
+An explanation of the project.
 
-* A ["Comparisons" page] that:
-  * Contains all of the visualizations on the same page so we can easily visually compare them.
-  * Uses a bootstrap grid for the visualizations.
-    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
+A link to each visualization page. For these, a sidebar should contain a preview image of each visualization. Clicking an image should take the user to that visualization.
 
-* A ["Data" page] that:
-  * Displays a responsive table containing the data used in the visualizations.
-    * The table must be a bootstrap table component.
-    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
+Four visualization pages, stored in the visualizations folder, each with the following elements:
+
+A descriptive title and a heading tag.
+
+The visualization for the selected comparison (latitude vs. max temperature, latitude vs. humidity, latitude vs. cloudiness, or latitude vs. wind speed). The images that these pages display should be stored in the assets/images folder.
+
+A paragraph describing the visualization and its significance.
+
+A comparisons page that does the following:
+
+Contains all the visualizations on the same page so that people can easily compare them.
+
+Uses a Bootstrap grid for the visualizations. This grid must contain two visualizations across a medium or large screen and one visualization across an extra-small or small screen.
+
+A data page that displays a responsive table containing the data that the visualizations use, as follows:
+
+The table must be a Bootstrap table component.
+
+HINT
+The data must come from either exporting or converting the CSV file to HTML. To do so, try using a tool that you already know: Pandas. Pandas has a to_html method that generates an HTML table from a Pandas DataFrame. To learn more, see pandas.DataFrame.to_html Links to an external site.in the official Pandas documentation.
+
+Note: Whether you use your own CSV file or the one provided, you should also upload the CSV file you used with your submission. This way your data page can be compared with the CSV file by your grader.
+
+At the top of every page, your website must have a navigation bar that does the following:
+
+Contains the name of the site on the left side of the navigation bar, allowing users to return to the landing page from any page.
+
+Contains a drop-down menu, named Plots, on the right side of the navigation bar that contains a link to each visualization page.
+
+Provides two more text links on the right side: Comparisons, which links to the comparisons page, and Data, which links to the data page.
+
+Is responsive (via media queries). Note that the navigation bar must resemble the one in the screenshots in the Navigation Bar section. In particular, notice the background color change.
+
+Your website must be deployed to GitHub Pages:
+
+As a result, the website must work at a live, publicly accessible URL. Save this URL for your later submission.
+Bonus
+For extra challenges (but no additional points), you may wish to try any or all of the following:
+
+Use the same requirements but a different dataset to make it your own.
+
+Use the same requirements, but add a Bootstrap theme to customize your website. To do so, you can use a tool like Bootswatch Links to an external site..
+
+Add extra visualizations.
+
+Use meaningful glyphicons next to the links in the navigation bar.
+
+On every visualization page that has an active state, add visualization navigation, as shown in the following images in the Screenshots section.
+
+Screenshots
+This section contains screenshots of each page, at various screen widths, that you must create. Keep in mind that these screenshots are intended as a guide. You can meet the requirements without exactly matching your pages to the screenshots.
